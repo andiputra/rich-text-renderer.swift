@@ -7,7 +7,15 @@ import UIKit
 open class TextRenderer: NodeRendering {
     public typealias NodeType = Text
 
-    required public init() {}
+    private let textColor: UIColor
+
+    required public init() {
+        self.textColor = UIColor.rtrLabel
+    }
+
+    public init(textColor: UIColor) {
+        self.textColor = textColor
+    }
 
     open func render(
         node: Text,
@@ -16,13 +24,11 @@ open class TextRenderer: NodeRendering {
     ) -> [NSMutableAttributedString] {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = rootRenderer.configuration.textConfiguration.lineSpacing
-        paragraphStyle.paragraphSpacing = rootRenderer.configuration.textConfiguration.paragraphSpacing
-
-        let textColor = UIColor.rtrLabel
+        paragraphStyle.paragraphSpacing = rootRenderer.configuration.textConfiguration.paragraphSpacing        
 
         var attributes: [NSAttributedString.Key: Any] = [
             .font: rootRenderer.configuration.fontProvider.font(for: node),
-            .foregroundColor: textColor,
+            .foregroundColor: self.textColor,
             .paragraphStyle: paragraphStyle
         ]
 
