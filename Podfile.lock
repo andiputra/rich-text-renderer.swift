@@ -1,13 +1,13 @@
 PODS:
-  - Alamofire (5.2.2)
+  - Alamofire (5.4.1)
   - AlamofireImage (4.1.0):
     - Alamofire (~> 5.1)
-  - Contentful (5.2.0):
-    - Contentful/ImageOptions (= 5.2.0)
-  - Contentful/ImageOptions (5.2.0)
+  - Contentful (5.4.1):
+    - Contentful/ImageOptions (= 5.4.1)
+  - Contentful/ImageOptions (5.4.1)
   - ContentfulRichTextRenderer (0.2.2):
     - AlamofireImage (~> 4.1.0)
-    - Contentful (~> 5.2.0)
+    - Contentful (~> 5.4.1)
 
 DEPENDENCIES:
   - AlamofireImage
@@ -25,10 +25,10 @@ EXTERNAL SOURCES:
     :path: ContentfulRichTextRenderer.podspec
 
 SPEC CHECKSUMS:
-  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
   AlamofireImage: c4a2ba349885fb3064feb74d2e547bd42ce9be10
-  Contentful: 4973186d957d01c4868107fa4bda2149cd5ea107
-  ContentfulRichTextRenderer: ca97791ad72f1bbc8a81dfe02a94c8601c5f80ff
+  Contentful: 3cce0a74079b430c3bcd2f2ffe91357184783c99
+  ContentfulRichTextRenderer: 7ffdd4bbbc9757920d14cc026d21a6be490dd9da
 
 PODFILE CHECKSUM: bd675c168d5509e36d3f486fb30efb77aeb621ef
 
